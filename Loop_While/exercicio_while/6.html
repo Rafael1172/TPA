@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        
+        let contador = 1;
+        let resposta;
+
+        while (contador <= 100) {
+           resposta = prompt('Deseja Continuar: ');
+           console.log(contador);
+            if (resposta == 's' || resposta == 'sim' || resposta == 'S' || resposta == 'Sim' || resposta == "SIM") {
+                contador++;
+            } else {
+                contador = 101;
+            }
+        }
+
+        console.log('processo finalizado');
     </script>
 </body>
 </html>
