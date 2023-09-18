@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <script>    
+        let escolha = parseInt(prompt('Escolha um número de 1 a 10: '));
+        let contador = Math.floor((Math.random() * 10) + 1);
+        
+
+
+        while (escolha <= 10) {
+            if  (escolha == contador) {
+                console.log('Acertou');
+            } else {
+                console.log('Errou');
+            }
+            console.log(contador);
+            escolha++;
+        }
+
+
+    </script>
+</body>
+</html>
