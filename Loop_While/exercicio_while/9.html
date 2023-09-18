@@ -6,22 +6,28 @@
     <title>9</title>
 </head>
 <body>
-    <script>    
+    <script>  
         let escolha = parseInt(prompt('Escolha um número de 1 a 10: '));
-        let contador = Math.floor((Math.random() * 10) + 1);
-        
+        let chances = 5;
 
 
-        while (escolha <= 10) {
-            if  (escolha == contador) {
-                console.log('Acertou');
+        while (chances >= 0) {
+            let numero = Math.floor((Math.random() * 10) + 1);
+            if  (escolha == numero) {
+                alert('Acertou');
+                chances = 0;
             } else {
-                console.log('Errou');
+                escolha = parseInt(prompt('Você errou ainda tem '+ contador +'Chances. Digite outro numero: '));
+                chances--;
+
+                if (chances == 0) {
+                    alert('Você perdeu');
+                }
             }
-            console.log(contador);
-            escolha++;
+
         }
 
+        console.log(numero);
 
     </script>
 </body>
